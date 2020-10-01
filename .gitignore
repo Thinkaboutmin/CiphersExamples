@@ -1,0 +1,5 @@
+*.json
+*workspace
+.ccls
+.vscode
+build
