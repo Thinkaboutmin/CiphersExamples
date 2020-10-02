@@ -13,8 +13,6 @@ namespace ciphers {
 
     private:
         void changeCaesarJump(const short & number_of_jumps);
-
-
     };
 };
 

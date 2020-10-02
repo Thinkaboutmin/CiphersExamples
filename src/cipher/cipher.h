@@ -12,7 +12,7 @@ namespace ciphers {
 
         virtual std::string & decrypt() = 0;
 
-        virtual ~Cipher();
+        virtual ~Cipher() = default;
 
     protected:
         Cipher() = default;

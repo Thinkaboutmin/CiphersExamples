@@ -5,7 +5,11 @@
 #include "../caesar/caesar.h"
 
 namespace ciphers {
-    CaesarWindow::CaesarWindow(BaseObjectType * c_object, const Glib::RefPtr<Gtk::Builder> builder) : CipherWindow(c_object, builder) {
+    CaesarWindow::~CaesarWindow() {
+        // TODO: What do I even destroy here?
+    }
+    CaesarWindow::CaesarWindow(BaseObjectType * c_object, const Glib::RefPtr<Gtk::Builder> builder) : 
+           CipherWindow(c_object, builder)  {
         // Cipher
         this->cipher = new Caesar();
 
@@ -60,6 +64,4 @@ namespace ciphers {
         text = std::to_string(value);
         buffer->set_text(text);
     }
-
-
 };

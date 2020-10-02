@@ -14,7 +14,6 @@ if(!GTKMM_FOUND)
 endif()
 
 add_executable(ciphers main.cpp src/caesar/caesar.cpp src/ui/cipher_window.cpp src/ui/ciphers_menu_window.cpp src/ui/caesar_window.cpp)
-add_compile_definitions(ciphers ${GTKMM_DEFINITIONS})
 target_include_directories(ciphers PUBLIC ${GTKMM_INCLUDE_DIRS})
 target_link_libraries(ciphers ${GTKMM_LIBRARIES})
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

@@ -18,7 +18,7 @@ namespace ciphers {
     }
 
     CipherWindow::CipherWindow(BaseObjectType * c_object, const Glib::RefPtr<Gtk::Builder> builder) 
-        : Gtk::ApplicationWindow(c_object), builder(builder) {}
+        : builder(builder), Gtk::ApplicationWindow(c_object) {}
 
     CipherWindow::~CipherWindow() {
         if (this->cipher != nullptr) {
